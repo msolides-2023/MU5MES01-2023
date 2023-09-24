@@ -8,47 +8,43 @@ We suggest and support the installation method using anaconda. Anaconda is a use
 
 The following install instruction work only on Linux on Macos. If you have Windows, see below.
 
-1. Install Anaconda from https://www.anaconda.com/products/distribution.
-    - If you are on Macosx: choose the install form your platform:
-        - Intel processors: https://repo.anaconda.com/archive/Anaconda3-2022.05-MacOSX-x86_64.pkg
-        - M1 processors: https://repo.anaconda.com/archive/Anaconda3-2022.05-MacOSX-arm64.pkg
+1. Install Anaconda:
+   - Go to https://www.anaconda.com/download#downloads.
+   - If you are on macOS and have an M1/M2 processor, be sure to download the M1 version of Anaconda.
 
-2. Open a new terminal and go to the directory containing the file `fenicsx-0.6.0.yaml`. You will find this file in the present git repository.
+2. Download the present reporitory in your computer either by using git (`git clone https://github.com/msolides-2023/MU5MES01-2023.git`) or by downloading a zip version: `https://github.com/msolides-2023/MU5MES01-2023/archive/refs/heads/main.zip`.
 
-3. You should be now in the 'base' environment and your command prompt should show '(base)'.
-To be sure to use updated version of the package and avoid further conflicts, let us update the `base` environment with the following command:
-```
-conda update -n base -c defaults conda
-```
+2. Open a new terminal and go to the directory containing the file `fenicsx-0.6.0.yaml`. You will find this file in the present git repository, downloaded at the previous step.
 
-4. Create a new conda environment from the file `fenicsx-0.6.0.yaml`
+3. You should now be in the `base`` environment and your command prompt should show `(base)`. To be sure to use the updated version of the package and avoid conflicts, create a new environment:
     ```
-    conda env create --file fenicsx-0.6.0.yml
+    conda update -n base -c defaults conda
     ```
 
-5. You have now installed fenics in the conda environment `fenicsx-0.6.0`. To use it you must activate the environment with the following command
-    ```
-    conda activate fenicsx-0.6.0
-    ```
-
-After the first installation, you need only step 5 above (`conda activate fenicsx-0.6.0`) to use fenicsx on a terminal.
-
-You can find further help on conda [here](https://docs.conda.io/projects/conda/en/latest/_downloads/843d9e0198f2a193a3484886fa28163c/conda-cheatsheet.pdf)
-
-### Troubleshooting
-- If you get `CondaValueError: prefix already exists: /Users/maurini/opt/anaconda3/envs/fenicsx-0.6.0` try with
+4. Create a new conda environment from the file `fenicsx-0.6.0.yaml`. This will install the major required packages for the course. You can read the file `fenicsx-0.6.0.yaml` to see which packages are installed. The installation can take a few minutes.
+The ``--force`` option is used to overwrite an existing environment with the same name.
     ```
     conda env create --file fenicsx-0.6.0.yml --force
     ```
 
+5. Congratulations, you have successfully installed FEniCS in the Conda environment `fenicsx-0.6.0`. To use it, you must activate the environment by running the following command in a terminal window:
+
+    ```
+    conda activate fenicsx-0.6.0
+    ``` 
+
+This will activate the environment and allow you to use the packages that were installed in it, including FEniCS. Note that activating an environment only affects the current terminal session. If you open a new terminal window, you will need to activate the environment again.
+
+After the first installation, you only need to run step 5 above (`conda activate fenicsx-0.6.0`) to use FEniCS in a terminal.
+
+For further help on Conda, you can refer to the [Conda cheatsheet](https://docs.conda.io/projects/conda/en/latest/_downloads/843d9e0198f2a193a3484886fa28163c/conda-cheatsheet.pdf).
+
 ## On Windows
 
-FEniCS is not distributed for Windows boxes. For Windows 10, the preferred option is the [Windows subsystem for linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
-Install the Ubuntu distribution as WSL, then refer to the section above inside the Ubuntu WSL
+FEniCS is not distributed for Windows boxes. For Windows 10, the preferred option is the [Windows subsystem for linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install).
+Install the Ubuntu distribution as WSL, then refer to the section above inside the Ubuntu WSL.
 
-If you cannot install the WSL, you will need to create Ubuntu virtual machine. Get in touch with your instructors in that case.
-Then inside the ubuntu virtual machine follows the instruction for conda installation
-
+As an alterative you can use Docker or a cloud-based solution.
 
 ## Cloud-based  Google colab installations
 You can run python programs jupyter notebooks and FEniCS on online servers. The basic service is free and can be a solution if all other installation systems fail.
