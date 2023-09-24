@@ -8,8 +8,6 @@ This repository collects the material to the class MU5MES01 of the Solid Mechani
 
     * Claire Lestringant (claire.lestringant@sorbonne-universite.fr)
 
-    * Corrado Maurini (corrado.maurini@sorbonne-universite.fr, tour 55-65, 414)
-
     * Sébastien Neukirch (sebastien.neukirch@sorbonne-universite.fr)
 
 * You can find help on how to install and use FEniCS in [INSTALL.md](INSTALL.md)
@@ -46,5 +44,3 @@ In this class we will use the following open-source numerical tools:
 
 - `paraview`: ParaView is an open-source, multi-platform data analysis and visualization application (https://www.paraview.org).
 
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/msolides-2022/MU5MES01-2022.git/HEAD)
