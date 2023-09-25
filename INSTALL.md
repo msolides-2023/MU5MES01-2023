@@ -6,17 +6,17 @@ Instructions on how to install FEniCS-dolfinx are available https://fenicsprojec
 
 We suggest and support the installation method using anaconda. Anaconda is a useful package manager for python.
 
-The following install instruction work only on Linux on Macos. If you have Windows, see below.
+The following install instruction work only on Linux on Macosx. If you have Windows, see below.
 
 1. Install Anaconda:
    - Go to https://www.anaconda.com/download#downloads.
    - If you are on macOS and have an M1/M2 processor, be sure to download the M1 version of Anaconda.
 
-2. Download the present reporitory in your computer either by using git (`git clone https://github.com/msolides-2023/MU5MES01-2023.git`) or by downloading a zip version: `https://github.com/msolides-2023/MU5MES01-2023/archive/refs/heads/main.zip`.
+2. Download the present repository in your computer either by using git (`git clone https://github.com/msolides-2023/MU5MES01-2023.git`) or by downloading a zip version: `https://github.com/msolides-2023/MU5MES01-2023/archive/refs/heads/main.zip`.
 
 2. Open a new terminal and go to the directory containing the file `fenicsx-0.6.0.yaml`. You will find this file in the present git repository, downloaded at the previous step.
 
-3. You should now be in the `base`` environment and your command prompt should show `(base)`. To be sure to use the updated version of the package and avoid conflicts, create a new environment:
+3. You should now be in the `base` environment and your command prompt should show `(base)`. To be sure to use the updated version of the package and avoid conflicts, create a new environment:
     ```
     conda update -n base -c defaults conda
     ```
@@ -27,7 +27,19 @@ The ``--force`` option is used to overwrite an existing environment with the sam
     conda env create --file fenicsx-0.6.0.yml --force
     ```
 
-5. Congratulations, you have successfully installed FEniCS in the Conda environment `fenicsx-0.6.0`. To use it, you must activate the environment by running the following command in a terminal window:
+5. Install the xserver. This is required to run the graphical interface of pyvista.
+    - On Linux, assuming that you are using a Debian-based distribution (e.g. Ubuntu), run the following command:
+        ```
+        sudo apt install libgl1-mesa-glx xvfb
+        ```
+    - On macOS:
+        a. Install XQuartz by downloading and running the installer from the XQuartz website at https://www.xquartz.org/.
+        b. Install the xorg-xserver package by running the following command in a terminal window with the fenicsx-0.6.0 activated :
+        ```
+        conda install -c conda-forge xorg-xserver
+        ```
+
+6. Congratulations, you have successfully installed FEniCS in the Conda environment `fenicsx-0.6.0`. To use it, you must activate the environment by running the following command in a terminal window:
 
     ```
     conda activate fenicsx-0.6.0
