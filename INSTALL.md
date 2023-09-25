@@ -33,8 +33,8 @@ The ``--force`` option is used to overwrite an existing environment with the sam
         sudo apt install libgl1-mesa-glx xvfb
         ```
     - On macOS:
-        a. Install XQuartz by downloading and running the installer from the XQuartz website at https://www.xquartz.org/.
-        b. Install the xorg-xserver package by running the following command in a terminal window with the fenicsx-0.6.0 activated :
+        - Install XQuartz by downloading and running the installer from the XQuartz website at https://www.xquartz.org/.
+        - Install the xorg-xserver package by running the following command in a terminal window with the fenicsx-0.6.0 activated :
         ```
         conda install -c conda-forge xorg-xserver
         ```
