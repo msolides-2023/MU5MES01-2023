@@ -3,33 +3,29 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - fenics-dolfinx=0.6.0
+  - fenics-dolfinx
   - matplotlib
   - numba 
   - sympy 
   - scipy 
   - pip
-  - gmsh
-  - python-gmsh
-  - seaborn
-  - pandas
-  - tqdm
-  - h5py  
-  - pyaml
-  - trame
+  - pyvista[trame]
+  - jupyterlab
   
   - pip:
-    - ipython
-    - jupyter-book 
-    - ipyvtklink
-    - ipywidgets
-    - json5
-    - pyvista
     - jupyterlab
-    - black  
-    - flake8 
-    - autoflake  
-    - imageio
-    - autopep8
-    - wget
-    - panel
+    - gmsh
+    - seaborn
+    - pandas
+    - tqdm
+    - h5py  
+    - pyaml
+#    - ipython
+#    - json5
+#    - jupyterlab
+#    - flake8 
+#    - autoflake  
+#    - imageio
+#    - autopep8
+#    - wget
+#   - panel
