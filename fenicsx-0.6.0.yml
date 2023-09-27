@@ -11,9 +11,9 @@ dependencies:
   - pip
   - pyvista[trame]
   - jupyterlab
+  - jupyter
   
   - pip:
-    - jupyterlab
     - gmsh
     - seaborn
     - pandas
