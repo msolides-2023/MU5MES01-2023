@@ -30,7 +30,8 @@ The ``--force`` option is used to overwrite an existing environment with the sam
 5. Install the xserver. This is required to run the graphical interface of pyvista.
     - On Linux, assuming that you are using a Debian-based distribution (e.g. Ubuntu), run the following command:
         ```
-        sudo apt install libgl1-mesa-glx xvfb
+        sudo apt-get update
+        sudo apt-get install libgl1-mesa-glx xvfb
         ```
     - On macOS:
         - Install XQuartz by downloading and running the installer from the XQuartz website at https://www.xquartz.org/.
