@@ -4,6 +4,7 @@ This is the preliminary program
 
 ## Part I - Linear Elasticity
  * 29/09 Introduction and basic tutorial
+  
   - 8h30 - 9h30 General introduction (D. Duhamel)
   - 9h30 - 10h30 Review of the Finite Element method (C. Lestringant)
   - 10h30 - 12h30 Organisation in groups (D.Duhamel/C.Lestringant/S.Neukirch)
@@ -15,6 +16,7 @@ This is the preliminary program
  * 06/10 (TP in groups - salle de TD) 
     
     Homework: Study Chap. Intro of FEniCS Book, run Laplacian example, prepare a list of questions
+    
   - TP1 - General starting tutorial: laplacian from fenicsx tutorial and linear elasticity demo (cantilever beam)
   - Start exercise on Linear Elasticity Eshelby at the end
 
