@@ -2,7 +2,7 @@
 
 In this class we will use fenicsx, a python library for finite element computations. We will use the version 0.6.0 of fenicsx. 
 
-The goal of this homework is to install fenicsx on your computer and perform a  test to check that everything is working fine.
+The goal of this homework is to install fenicsx on your computer and perform a test to check that everything is working fine.
 
 You must have a working installation of fenicsx before the first class. If you have any problem, please contact us in slack.
 
@@ -10,7 +10,7 @@ You must have a working installation of fenicsx before the first class. If you h
 
 2. Install Paraview that you can find at https://www.paraview.org/download/. Paraview is a free open-source software for visualization of 3D data. We will use it to visualize the results of our simulations.
 
-3. Test your installation by running the file `demo_poission.py` in this folder. You can run the file by typing in a terminal:
+3. Test your installation by running the file `demo_poisson.py` in this folder. You can run the file by typing in a terminal:
     
     ```
     python3 demo_poisson.py

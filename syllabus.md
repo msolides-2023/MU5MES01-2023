@@ -1,43 +1,47 @@
-# Syllabus 2022-2023
+# Syllabus 2023-2024
 
 This is the preliminary program
 
 ## Part I - Linear Elasticity
-
- * 23/09 (Amphi)
+ * 29/09 (Amphi)
  	- 8h30 - 9h30 General introduction (D. Duhamel)
-	- 9h45 - 11h15 Review of the Finite Element method and Introduction to FEniCS (C.Maurini)
-	- 11h15 - 12h30 Organisation in groups, D.Duhamel/C.Maurini/S.Neukirch
+	- 9h30 - 10h30 Review of the Finite Element method (C. Lestringant)
+	- 10h30 - 12h30 Organisation in groups (D.Duhamel/C.Lestringant/S.Neukirch)
 	Homework:
-		1. Having a working FEniCS installation and test the laplacian example
+		1. Having a working fenicsx installation and test the laplacian example
 		2. Study entire Chap 2 and Chap 3.3 of [1]		
 
-  * 30/09 (TP in groups - salle de TD)
-  	- Devoir : Study Chap. Intro of FEniCS Book, run Laplacian example, prepare a list of questions
-	- TP 1 - General starting tutorial: Laplacian from FEniCS tutorial and Linear Elasticity (clamped-clamped beam 2D rectangle)
-	- Give the text of the exercise for Linear Elasticity Eshelby at the end
+ * 06/10 (TP in groups - salle de TD)
+  - Homework: Study Chap. Intro of FEniCS Book, run Laplacian example, prepare a list of questions
+	- TP1 - General starting tutorial: laplacian from fenicsx tutorial and linear elasticity demo (cantilever beam)
+	- Start exercise on Linear Elasticity Eshelby at the end
 
-  * 07/10 TP 2 - Linear Elasticity Eshelby
-  * 14/10 TP 2 - Linear Elasticity Eshelby (cont'd)
-   (Submit the 2 pages report on thursday 20th october 2022)
+  * 13/10 TP2 - Linear Elasticity Eshelby
+  * 20/10 TP2 - Linear Elasticity Eshelby (cont'd)
+   (submit the 2 pages report before thursday 26th october 2023)
 
 ## Part II - Introduction to nonlinear elasticity
-  * 21/10 (Amphi C. Lestringant) Cours and basic tutorial
-  * 28/10 TP3 Explicit implementation of a Newton solver
+  * 27/10 
+   - 8h30 - 10h30 Introductory lecture (C. Lestringant) 
+   - 10h30 - 12h30 Basic tutorial
+  * 10/11 
+   - 8h30-9h30: Seminar by Jørgen S. Dokken
+   - 9h30 - 12h30 TP3 - Explicit implementation of a Newton solver
 
 ## Part III - Dynamics
+  * 17/11
+   - 8h30 - 10h30 Introductory Lecture (D. Duhamel)
+   - 10h30 - 12h30 Basic tutorial
+  * 24/11 TP4 Dynamics, 2D rectangle (linear setup)
+  * 08/12 TP5 Advanced topic for a project: Bifurcation and stability analysis (snapping of a beam)
+    (submit the 2 pages report before thursday 14th december 2023)
 
-  * 18/11 (Amphi D. Duhamel) Cours and basic tutorial
-  * 02/12 TP Dynamique, 2D rectangle (linear setup)
-  * 09/12 TP Advanced topic for a project: Bifurcation and stability analysis
-
-  * (?? Janvier 2023) EXAMEN ORAL : 30 min
+## ORAL EXAM (22/12): 30 min
 
 ## Deadlines
-
-* 30/09  A working installation of FEniCS (bring your own laptop with a running poisson demo, this will be tested and is a part of the evaluation)
-* 21/10  1st short (2 pages) report (linear elasticity (Eshelby))
-* 16/12  2nd written report 4 pages (Structural Design of a bridge tower or snapping dynamics of a beam)
+* 29/09  A working installation of FEniCS (bring your own laptop with a running poisson demo, this will be tested and is a part of the evaluation)
+* 26/10  1st short (2 pages) report (linear elasticity (Eshelby))
+* 14/12  2nd written report 4 pages (snapping dynamics of a beam)
 
 
 ## References:

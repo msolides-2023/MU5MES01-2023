@@ -2,7 +2,7 @@
 
 ## On Linux and Macosx using Anaconda
 
-Instructions on how to install FEniCS-dolfinx are available https://fenicsproject.org/download/.
+Instructions on how to install FEniCS-dolfinx are available at https://fenicsproject.org/download/.
 
 We suggest and support the installation method using anaconda. Anaconda is a useful package manager for python.
 
@@ -16,7 +16,7 @@ The following install instruction work only on Linux on Macosx. If you have Wind
 
 2. Open a new terminal and go to the directory containing the file `fenicsx-0.6.0.yaml`. You will find this file in the present git repository, downloaded at the previous step.
 
-3. You should now be in the `base` environment and your command prompt should show `(base)`. To be sure to use the updated version of the package and avoid conflicts, create a new environment:
+3. You should now be in the `base` environment and your command prompt should show `(base)`. Make sure to use the updated version of the package and avoid conflicts.
     ```
     conda update -n base -c defaults conda
     ```
