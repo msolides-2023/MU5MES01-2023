@@ -83,3 +83,18 @@ or copy and paste this code in the notebook and exectute the cell
 # Editor
 
 We suggest to use VSCode as editor. It is free and open source. It is available for Linux, Macosx and Windows. It is a very good editor for python and it has a very good integration with git. You can find it here: https://code.visualstudio.com/
+
+
+# Troubleshooting
+
+If conda installation of the fenicsx-0.6.0 environment takes too long, interrupt the process and try with `mamba`:
+1. Install mamba: 
+```
+curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
+bash Miniforge3-$(uname)-$(uname -m).sh
+```
+2. Open a new terminal and use `mamba` to install instead of `conda``: 
+```
+mamba env create --file fenicsx-0.6.0.yml
+```
+Hence always use `mamba` instead of `conda` to install packages in the environment.
