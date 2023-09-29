@@ -1,0 +1,18 @@
+ame: Python 3
+
+# Use the official Conda Docker image as the base image
+image: continuumio/miniconda3
+
+# Specify the Conda packages to install
+runArgs:
+  - conda
+  - env
+  - update
+  - -n
+  - base
+  - -f
+  - fenicsx-0.6.0.yml
+
+# Forward the container's port 8888 to the local machine
+forwardPorts:
+  - 8888:8888
