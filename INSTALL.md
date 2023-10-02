@@ -24,8 +24,11 @@ The following install instruction work only on Linux on Macosx. If you have Wind
 4. Create a new conda environment from the file `fenicsx-0.6.0.yaml`. This will install the major required packages for the course. You can read the file `fenicsx-0.6.0.yaml` to see which packages are installed. The installation can take a few minutes.
 The ``--force`` option is used to overwrite an existing environment with the same name.
     ```
+    conda install -n base conda-libmamba-solver
+    conda config --set solver libmamba
     conda env create --file fenicsx-0.6.0.yml --force
     ```
+The first two lines are needed to use the new conda solver `mamba` instead of the default `conda` solver. This can be useful to avoid conflicts with the `pyvista` package and have a quicker installation.
 
 5. Install the xserver. This is required to run the graphical interface of pyvista.
     - On Linux, assuming that you are using a Debian-based distribution (e.g. Ubuntu), run the following command:
@@ -98,3 +101,20 @@ bash Miniforge3-$(uname)-$(uname -m).sh
 mamba env create --file fenicsx-0.6.0.yml
 ```
 Hence always use `mamba` instead of `conda` to install packages in the environment.
+
+
+### Docker
+
+To build a docker image for this documentation, you can run
+
+```
+docker build -t fenicsx-mes01 -f docker/Dockerfile .
+```
+
+from the root of this repository. To create a one-time usage container you can call:
+
+```
+docker run --rm -ti -v $(pwd):/root/shared -w /root/shared  --init -p 8888:8888 fenicsx-mes01
+```
+
+You can then access the jupyter lab notebook at `http://localhost:8888` in your browser.
