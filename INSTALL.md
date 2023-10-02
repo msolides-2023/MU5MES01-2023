@@ -90,6 +90,7 @@ We suggest to use VSCode as editor. It is free and open source. It is available 
 
 # Troubleshooting
 
+## `mabma` instead of `conda``
 If conda installation of the fenicsx-0.6.0 environment takes too long, interrupt the process and try with `mamba`:
 1. Install mamba: 
 ```
@@ -102,6 +103,13 @@ mamba env create --file fenicsx-0.6.0.yml
 ```
 Hence always use `mamba` instead of `conda` to install packages in the environment.
 
+## `pyvista` installation
+If you have problems with the installation of `pyvista`, you can try to install it with `pip` instead of `conda`, as follows (after activating the environment):
+ 
+```
+apt-get install python3-numpy python3-imageio python3-pil python3-appdirs python3-vtk9 -yq
+pip install --no-deps scooby pyvista
+```
 
 ### Docker
 
