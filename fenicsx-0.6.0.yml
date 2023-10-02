@@ -9,7 +9,7 @@ dependencies:
   - sympy 
   - scipy 
   - pip
-  - pyvista[trame]
+#  - pyvista[trame]
   - python-gmsh
   
   - pip:
