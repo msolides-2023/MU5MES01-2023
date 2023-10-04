@@ -22,6 +22,9 @@ RUN apt-get update && apt-get install -y libgl1-mesa-glx libxrender1 xvfb nodejs
 # RUN python3 -m pip install cython
 # RUN python3 -m pip install --no-build-isolation --no-binary=h5py h5py
 
+RUN apt-get install -yq python3-imageio python3-pil python3-appdirs python3-vtk9 
+RUN pip3 install --no-deps scooby pyvista
+
 RUN pip3 install --upgrade pip 
 ADD requirements.txt /tmp/requirements.txt
 RUN HDF5_MPI=${HDF5_MPI} CC=mpicc HDF5_DIR=${HDF5_DIR} python3 -m pip install  --no-cache-dir -r requirements.txt
