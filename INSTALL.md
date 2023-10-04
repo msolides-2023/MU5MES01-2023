@@ -125,4 +125,11 @@ from the root of this repository. To create a one-time usage container you can c
 docker run --rm -ti -v $(pwd):/root/shared -w /root/shared  --init -p 8888:8888 fenicsx-mes01
 ```
 
+* on **Windows** cmd:
+
+docker run --rm -ti -v "%cd%":/root/shared -w /root/shared  --init -p 8888:8888 fenicsx-mes01
+
 You can then access the jupyter lab notebook at `http://localhost:8888` in your browser.
+
+
+     
