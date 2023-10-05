@@ -28,7 +28,7 @@ The ``--force`` option is used to overwrite an existing environment with the sam
     conda config --set solver libmamba
     conda env create --file fenicsx-0.6.0.yml --force
     ```
-The first two lines are needed to use the new conda solver `mamba` instead of the default `conda` solver. This can be useful to avoid conflicts with the `pyvista` package and have a quicker installation.
+The first two lines are needed to use the new conda solver `mamba` instead of the default `conda` solver. This can be useful to have a quicker installation.
 
 5. Install the xserver. This is required to run the graphical interface of pyvista.
     - On Linux, assuming that you are using a Debian-based distribution (e.g. Ubuntu), run the following command:
@@ -43,11 +43,11 @@ The first two lines are needed to use the new conda solver `mamba` instead of th
         conda install -c conda-forge xorg-xserver
         ```
 
-6. Congratulations, you have successfully installed FEniCS in the Conda environment `fenicsx-0.6.0`. To use it, you must activate the environment by running the following command in a terminal window:
+6. You should have now installed FEniCS in the Conda environment `fenicsx-0.6.0`. To use it, you must activate the environment by running the following command in a terminal window:
 
     ```
     conda activate fenicsx-0.6.0
-    ``` 
+    ```
 
 This will activate the environment and allow you to use the packages that were installed in it, including FEniCS. Note that activating an environment only affects the current terminal session. If you open a new terminal window, you will need to activate the environment again.
 
@@ -104,32 +104,32 @@ mamba env create --file fenicsx-0.6.0.yml
 Hence always use `mamba` instead of `conda` to install packages in the environment.
 
 ## `pyvista` installation
-If you have problems with the installation of `pyvista`, you can try to install it with `pip` instead of `conda`, as follows (after activating the environment):
- 
+In the notebook, set the 
 ```
-apt-get install python3-numpy python3-imageio python3-pil python3-appdirs python3-vtk9 -yq
-pip install --no-deps scooby pyvista
+pyvista.set_jupyter_backend('static')
 ```
+This can avoid some problems with interactive widgets.
+
+If pyvista is not working, you can ignore it and use Paraview instead for visualisation.
 
 ### Docker
 
-To build a docker image for this documentation, you can run
+If previous installation methods fails, you can also use docker.
+
+First, install docker for your operating system. You can find instructions here: https://docs.docker.com/get-docker/
+
+Hence, the first time you use docker, you need to build a docker image.
+
+To build a docker image for this documentation,  you can run from the root of this repository (use the `PowerShell` if you are on Windows)
 
 ```
 docker build -t fenicsx-mes01 -f docker/Dockerfile .
 ```
 
-from the root of this repository. To create a one-time usage container you can call:
+To create a one-time usage container you can call:
 
 ```
 docker run --rm -ti -v $(pwd):/root/shared -w /root/shared  --init -p 8888:8888 fenicsx-mes01
 ```
 
-* on **Windows** cmd:
-
-docker run --rm -ti -v "%cd%":/root/shared -w /root/shared  --init -p 8888:8888 fenicsx-mes01
-
 You can then access the jupyter lab notebook at `http://localhost:8888` in your browser.
-
-
-     
