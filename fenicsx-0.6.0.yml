@@ -2,6 +2,7 @@ name: fenicsx-0.6.0
 channels:
   - conda-forge
   - defaults
+  
 dependencies:
   - fenics-dolfinx
   - matplotlib
@@ -10,16 +11,16 @@ dependencies:
   - scipy 
   - pip
 #  - pyvista[trame]
-  - python-gmsh
-  
-  - pip:
-    - jupyterlab
-    - seaborn
-    - pandas
-    - tqdm
-    - h5py  
-    - pyaml
-    - ipython
+#  - python-gmsh
+#  
+#  - pip:
+#    - jupyterlab
+#    - seaborn
+#    - pandas
+#    - tqdm
+#    - h5py  
+#    - pyaml
+#    - ipython
 #    - json5
 #    - flake8 
 #    - autoflake  
