@@ -23,5 +23,6 @@ Thumbs.db
 
 # ouput files of fenics
 out_poisson/
-**-checkpoint.ipynb
-.ipynb_checkpoints/*
+output/
+.ipynb_checkpoints/
+
