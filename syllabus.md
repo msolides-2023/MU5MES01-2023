@@ -23,7 +23,7 @@ This is the preliminary program
   * 13/10 TP2 - Linear Elasticity Eshelby
   * 20/10 TP2 - Linear Elasticity Eshelby (cont'd)
 
-    => submit the 2 pages report before thursday 26th october 2023
+    => submit the 4 pages report before thursday 26th october 2023
 
 ## Part II - Introduction to nonlinear elasticity
   * 27/10 Introduction and basic tutorial 
@@ -40,14 +40,20 @@ This is the preliminary program
   * 24/11 TP4 Dynamics, 2D rectangle (linear setup)
   * 08/12 TP5 Advanced project: Bifurcation and stability analysis (snapping of a beam)
     
-    => submit the 2 pages report before thursday 14th december 2023
+    => submit the 4 pages report before thursday 14th december 2023
 
 ## ORAL EXAM (22/12): 30 min
 
+## Reports
+* 4 pages
+* submitted via moodle together with the associated code (the code should be able to reproduce all the graphs shown in the report)
+* can be prepared in groups of 2 students
+* penalty for lateness: 20% of marks per week or part week that the work is late
+
 ## Deadlines
 * 29/09  A working installation of FEniCS (bring your own laptop with a running poisson demo, this will be tested and is a part of the evaluation)
-* 26/10  1st short (2 pages) report (linear elasticity (Eshelby)
-* 14/12  2nd written report 4 pages (snapping dynamics of a beam)
+* 26/10  1st report (linear elasticity (Eshelby)
+* 14/12  2nd report (snapping dynamics of a beam)
 
 
 ## References:
