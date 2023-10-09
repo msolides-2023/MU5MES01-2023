@@ -46,7 +46,7 @@ This is the preliminary program
 
 ## Reports
 * 4 pages long, in french or english
-* submitted via moodle together with the associated code (the code should produce all the graphs shown in the report)
+* submitted individually via moodle together with the associated code (the code should produce all the graphs shown in the report)
 * can be prepared in groups of 2 students
 * penalty for lateness: 20% of marks per week or part week that the work is late
 
