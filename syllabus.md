@@ -45,8 +45,8 @@ This is the preliminary program
 ## ORAL EXAM (22/12): 30 min
 
 ## Reports
-* 4 pages
-* submitted via moodle together with the associated code (the code should be able to reproduce all the graphs shown in the report)
+* 4 pages long
+* submitted via moodle together with the associated code (the code should produce all the graphs shown in the report)
 * can be prepared in groups of 2 students
 * penalty for lateness: 20% of marks per week or part week that the work is late
 
