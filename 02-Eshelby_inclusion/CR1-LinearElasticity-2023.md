@@ -19,8 +19,8 @@ Your report should summarize and present synthetically your work on these items.
 
 
 **Important informations:**
- - Deadline: For the final version **Thursday 26 october 2022, 23h00**. We strongly suggest to have a preliminary version of the codes available for Friday 20 october 1pm.
- - **The maximal length of the report is 4 pages. **
+ - Deadline: For the final version **Thursday 26 october 2022, 11pm**. We strongly suggest to have a preliminary version of the codes available for Friday 20 october 1pm.
+ - **The maximal length of the report is 4 pages.**
  - An electronic version of your report should be submitted on Moodle: https://moodle-sciences-23.sorbonne-universite.fr/mod/assign/view.php?id=72627&forceview=1.
 
  Proceed as follows:
