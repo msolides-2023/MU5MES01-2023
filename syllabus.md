@@ -45,14 +45,14 @@ This is the preliminary program
 ## ORAL EXAM (22/12): 30 min
 
 ## Reports
-* 4 pages
-* submitted via moodle together with the associated code (the code should be able to reproduce all the graphs shown in the report)
+* 4 pages long, in french or english
+* submitted individually via moodle together with the associated code (the code should produce all the graphs shown in the report)
 * can be prepared in groups of 2 students
 * penalty for lateness: 20% of marks per week or part week that the work is late
 
 ## Deadlines
 * 29/09  A working installation of FEniCS (bring your own laptop with a running poisson demo, this will be tested and is a part of the evaluation)
-* 26/10  1st report (linear elasticity (Eshelby)
+* 26/10  1st report (linear elasticity Eshelby)
 * 14/12  2nd report (snapping dynamics of a beam)
 
 
