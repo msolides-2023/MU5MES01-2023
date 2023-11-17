@@ -26,3 +26,5 @@ out_poisson/
 output/
 .ipynb_checkpoints/
 
+*.h5
+*.xdmf
